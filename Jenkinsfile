@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 pipeline {
 
     agent {
@@ -36,3 +37,6 @@ pipeline {
         }*/
     }
 }
+=======
+
+>>>>>>> a950591108fc7abc545bcc83b07ca60907e1739d
