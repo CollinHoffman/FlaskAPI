@@ -5,12 +5,16 @@ pipeline {
     }
     stages {
         stage('Clone Repository') {
-            checkout scm
+            steps{
+                checkout scm
+            }
         }
 
         stage('Build') { 
+            steps{
+                def app = docker.build("test-image", "./test")
+            }
             
-            def app = docker.build("test-image", "./test")
         }
 
         stage('Testing') {
